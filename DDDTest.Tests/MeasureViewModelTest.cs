@@ -9,10 +9,10 @@ namespace DDDTest.Tests
         [TestMethod]
         public void 計測_シナリオ()
         {
-            var viewModel = new MeasureViewModel();
+            var viewModel = new MeasureViewModel(new SensorMock());
             Assert.AreEqual(viewModel.MeasureValue, "--");
             viewModel.Measure();
-            Assert.AreEqual(viewModel.MeasureValue, "1.23 m/s");
+            Assert.AreEqual(viewModel.MeasureValue, "1.23m/s");
         }
     }
 }
