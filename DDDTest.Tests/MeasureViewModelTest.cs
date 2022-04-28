@@ -6,7 +6,7 @@ using Moq;
 namespace DDDTest.Tests
 {
     [TestClass]
-    internal class MeasureViewModelTest
+    public class MeasureViewModelTest
     {
         [TestMethod]
         public void 計測_シナリオ()
