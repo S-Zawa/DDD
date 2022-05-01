@@ -39,7 +39,7 @@ namespace DDD.WinForm.ViewModels
             _measureRepository = measureRepository;
 
             var entity = _measureRepository.GetLatest();
-            MeasureDate = entity.MeasureDate.ToString("yyyy/MM/dd HH:mm:ss");
+            MeasureDate = entity.MeasureDate.DisplayValue;
             MeasureValue = entity.MeasureValue.DisplayValue;
         }
 
