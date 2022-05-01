@@ -10,5 +10,9 @@ namespace DDD.Infrastructure
         {
             return new SensorFake();
         }
+        public static IMeasureRepository CreateMeasureRepository()
+        {
+            return new MeasureFake();
+        }
     }
 }

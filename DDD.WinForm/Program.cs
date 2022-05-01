@@ -14,7 +14,7 @@ namespace DDD.WinForm
             // see https://aka.ms/applicationconfiguration.
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MeasureView());
+            Application.Run(new MenuView());
         }
     }
 }
