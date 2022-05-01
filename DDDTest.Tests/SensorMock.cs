@@ -1,12 +1,13 @@
 ﻿using DDD.Domain.Repositories;
+using DDD.Domain.ValueObjects;
 
 namespace DDDTest.Tests
 {
     internal sealed class SensorMock : ISensorRepository
     {
-        public float GetData()
+        public MeasureValue GetData()
         {
-            return 1.23456f;
+            return new MeasureValue(1.23456f);
         }
     }
 }

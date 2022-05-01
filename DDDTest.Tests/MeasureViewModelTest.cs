@@ -1,4 +1,5 @@
 ﻿using DDD.Domain.Repositories;
+using DDD.Domain.ValueObjects;
 using DDD.WinForm.ViewModels;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
@@ -17,7 +18,7 @@ namespace DDDTest.Tests
 
             Assert.AreEqual(viewModel.MeasureValue, "--");
 
-            sensorMock.Setup(x => x.GetData()).Returns(1.23456f);
+            sensorMock.Setup(x => x.GetData()).Returns(new MeasureValue(1.23456f));
             viewModel.Measure();
             Assert.AreEqual(viewModel.MeasureValue, "1.23m/s");
         }

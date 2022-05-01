@@ -1,7 +1,9 @@
-﻿namespace DDD.Domain.Repositories
+﻿using DDD.Domain.ValueObjects;
+
+namespace DDD.Domain.Repositories
 {
     public interface ISensorRepository
     {
-        float GetData();
+        MeasureValue GetData();
     }
 }

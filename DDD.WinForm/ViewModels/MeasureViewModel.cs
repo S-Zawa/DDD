@@ -22,8 +22,8 @@ namespace DDD.WinForm.ViewModels
 
         public void Measure()
         {
-            var value = _sensorRepository.GetData();
-            MeasureValue = Math.Round(value, 2) + "m/s";
+            var measureValue = _sensorRepository.GetData();
+            MeasureValue = measureValue.DisplayValue;
         }
 
         public MeasureViewModel() : this(Factories.CreateSendorRepository())

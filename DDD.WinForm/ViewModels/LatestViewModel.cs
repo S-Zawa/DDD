@@ -40,7 +40,7 @@ namespace DDD.WinForm.ViewModels
 
             var entity = _measureRepository.GetLatest();
             MeasureDate = entity.MeasureDate.ToString("yyyy/MM/dd HH:mm:ss");
-            MeasureValue = $"{Math.Round(entity.MeasureValue, 2)}m/s";
+            MeasureValue = entity.MeasureValue.DisplayValue;
         }
 
         public LatestViewModel() : this(Factories.CreateMeasureRepository())
