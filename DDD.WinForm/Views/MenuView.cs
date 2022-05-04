@@ -22,5 +22,13 @@
                 f.ShowDialog();
             }
         }
+
+        private void ListButton_Click(object sender, EventArgs e)
+        {
+            using (var f = new MeasureListView())
+            {
+                f.ShowDialog();
+            }
+        }
     }
 }

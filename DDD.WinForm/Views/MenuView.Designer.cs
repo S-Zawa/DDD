@@ -30,6 +30,7 @@
         {
             this.MeasureButton = new System.Windows.Forms.Button();
             this.LatestButton = new System.Windows.Forms.Button();
+            this.ListButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // MeasureButton
@@ -52,11 +53,22 @@
             this.LatestButton.UseVisualStyleBackColor = true;
             this.LatestButton.Click += new System.EventHandler(this.LatestButton_Click);
             // 
+            // ListButton
+            // 
+            this.ListButton.Location = new System.Drawing.Point(343, 232);
+            this.ListButton.Name = "ListButton";
+            this.ListButton.Size = new System.Drawing.Size(75, 23);
+            this.ListButton.TabIndex = 2;
+            this.ListButton.Text = "List";
+            this.ListButton.UseVisualStyleBackColor = true;
+            this.ListButton.Click += new System.EventHandler(this.ListButton_Click);
+            // 
             // MenuView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ListButton);
             this.Controls.Add(this.LatestButton);
             this.Controls.Add(this.MeasureButton);
             this.Name = "MenuView";
@@ -69,5 +81,6 @@
 
         private Button MeasureButton;
         private Button LatestButton;
+        private Button ListButton;
     }
 }

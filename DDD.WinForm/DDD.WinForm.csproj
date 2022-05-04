@@ -13,4 +13,10 @@
     <ProjectReference Include="..\DDD.Infrastructure\DDD.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="test.sqlite3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
