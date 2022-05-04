@@ -2,13 +2,13 @@
 
 namespace DDD.Domain.Entities
 {
-    public class MeasureEntity
+    public class Measure
     {
         public string MeasureId { get; }
         public MeasureDate MeasureDate { get; }
         public MeasureValue MeasureValue { get; }
 
-        public MeasureEntity(string measureId, DateTime measureDate, double measureValue)
+        public Measure(string measureId, DateTime measureDate, double measureValue)
         {
             MeasureId = measureId;
             MeasureDate = new MeasureDate(measureDate);

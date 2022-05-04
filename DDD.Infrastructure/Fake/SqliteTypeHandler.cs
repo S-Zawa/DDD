@@ -21,9 +21,29 @@ namespace DDD.Infrastructure.Fake
 
     internal class MeasureValueObjectHandler : SqliteTypeHandler<MeasureValue>
     {
+        public override void SetValue(IDbDataParameter parameter, MeasureValue value)
+        {
+            parameter.DbType = DbType.Double;
+            parameter.Value = value.Value;
+        }
+
         public override MeasureValue Parse(object value)
         {
             return new MeasureValue((float)value);
+        }
+    }
+
+    public class MeasureDateTypeHandler : SqlMapper.TypeHandler<MeasureDate>
+    {
+        public override void SetValue(IDbDataParameter parameter, MeasureDate value)
+        {
+            parameter.DbType = DbType.DateTime;
+            parameter.Value = value.Value;
+        }
+
+        public override MeasureDate Parse(object value)
+        {
+            return new MeasureDate((DateTime)value);
         }
     }
 

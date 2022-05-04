@@ -4,8 +4,8 @@ namespace DDD.Domain.Repositories
 {
     public interface IMeasureRepository
     {
-        MeasureEntity GetLatest();
+        Measure GetLatest();
 
-        IReadOnlyList<MeasureEntity> GetData();
+        IReadOnlyList<Measure> GetData();
     }
 }
