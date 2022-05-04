@@ -8,7 +8,7 @@ namespace DDD.Domain.Entities
         public MeasureDate MeasureDate { get; }
         public MeasureValue MeasureValue { get; }
 
-        public MeasureEntity(string measureId, DateTime measureDate, float measureValue)
+        public MeasureEntity(string measureId, DateTime measureDate, double measureValue)
         {
             MeasureId = measureId;
             MeasureDate = new MeasureDate(measureDate);

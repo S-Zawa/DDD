@@ -5,5 +5,6 @@ namespace DDD.Domain.Repositories
     public interface IMeasureRepository
     {
         MeasureEntity GetLatest();
+
     }
 }
