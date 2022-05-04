@@ -6,5 +6,6 @@ namespace DDD.Domain.Repositories
     {
         MeasureEntity GetLatest();
 
+        IReadOnlyList<MeasureEntity> GetData();
     }
 }
