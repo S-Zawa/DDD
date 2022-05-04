@@ -1,7 +1,7 @@
 ﻿using DDD.Domain.ValueObjects;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace DDDTest.Tests
+namespace DDDTest.Tests.WinForm
 {
     [TestClass]
     public class MeasureValueTest

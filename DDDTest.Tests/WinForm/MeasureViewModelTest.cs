@@ -4,7 +4,7 @@ using DDD.WinForm.ViewModels;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 
-namespace DDDTest.Tests
+namespace DDDTest.Tests.WinForm
 {
     [TestClass]
     public class MeasureViewModelTest

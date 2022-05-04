@@ -1,7 +1,7 @@
 ﻿using DDD.WinForm.ViewModels;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace DDDTest.Tests
+namespace DDDTest.Tests.WinForm
 {
     [TestClass]
     public class LatestViewModelTest
